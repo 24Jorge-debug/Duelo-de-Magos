@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Duelo de Magos</title>
+</head>
+
+<body>
+    <h1><b>Duelo de Magos</b></h1>
+    <section class="recuadro-exterior">
+        <button type="button" class="boton-inicio" onclick="empezarFuncion()">Empezar</button>
+
+        <div class="contenedor-juego">
+            <div class="bloque-jugador">
+                <section class="jugador-1">
+                    <p><b>Jugador 1</b></p>
+
+                    <form class="opciones-porcentajes">
+                        <select id="selec-opciones">
+                            <option value="porcentaje-60">60%</option>
+                            <option value="porcentaje-80">80%</option>
+                            <option value="porcentaje-100">100%</option>
+                        </select>
+                    </form>
+                    <table class="tabla-1">
+                        <thead>
+                            <tr>
+                                <td><button id="Atacar-1" class="Atacar-1" onclick="jugador1ataca()">Atacar</button>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><button id="Pasar-1" class="Pasar-1" onclick="pasarAtaque1()">Pasar</button></td>
+                            </tr>
+                            <td>
+                                <form class="Elegir-jugador">
+                                    <select id="objetivo-jugador1">
+                                        <option value="2">Jugador 2</option>
+                                        <option value="3">Jugador 3</option>
+                                    </select>
+                                </form>
+                            </td>
+                        </tbody>
+                    </table>
+                </section>
+                <p class="estado-jugador1" id="estado-jugador1">Vivo</p>
+            </div>
+
+
+            <div class="bloque-resultado">
+                <p><b>Resultado</b></p>
+                <div class="contenedor-resultado"></div>
+            </div>
+
+            <div class="bloque-jugador">
+                <section class="jugador-2">
+                    <p><b>Jugador 2 (90%)</b></p>
+                    <table class="tabla-2">
+                        <thead>
+                            <tr>
+                                <td><button id="Atacar-2" class="Atacar-2" onclick="jugador2ataca()">Atacar</button>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><button id="Pasar-2" class="Pasar-2" onclick="pasarAtaque2()">Pasar</button></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <form class="Elegir-jugador">
+                                        <select id="objetivo-jugador2">
+                                            <option value="3">Jugador 3</option>
+                                            <option value="1">Jugador 1</option>
+                                        </select>
+                                    </form>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <p class="estado-jugador2" id="estado-jugador2">Vivo</p>
+            </div>
+        </div>
+
+        <div class="bloque-jugador">
+            <section class="jugador-3">
+                <p><b>Jugador 3 (70%)</b></p>
+
+                <table class="tabla-3">
+                    <thead>
+                        <tr>
+                            <td><button id="Atacar-3" class="Atacar-3" onclick="jugador3ataca()">Atacar</button>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><button id="Pasar-3" class="Pasar-3" onclick="pasarAtaque3()">Pasar</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <form class="Elegir-jugador">
+                                    <select id="objetivo-jugador3">
+                                        <option value="1">Jugador 1</option>
+                                        <option value="2">Jugador 2</option>
+                                    </select>
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <p class="estado-jugador3" id="estado-jugador3">Vivo</p>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

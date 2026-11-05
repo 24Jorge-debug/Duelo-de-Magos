@@ -1,0 +1,131 @@
+.recuadro-exterior {
+    border: 2px solid black;
+    padding: 20px;
+    width: 50%;
+    display: block;
+    margin: 0 auto 20px auto;
+    margin-top: 100px;  
+}
+
+h1 {
+    margin-top: 50px;
+}
+.boton-inicio {
+    text-align: center;
+    display: block;
+    margin: 0 auto 20px auto;    
+}
+
+.tabla-1, .tabla-2, .tabla-3 {
+  width: 0%; 
+  border-spacing: 0; 
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+.contenedor-juego {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    gap: 30px;               
+}
+
+.contenedor-resultado {
+    border: 2px solid black;
+    width: 120px;
+    height: 100px;
+    background-color: white;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+th, td {
+  border: 1px solid black;   
+  padding: 5px;
+  text-align: center;
+}
+
+p {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.jugador-1, .jugador-2, .jugador-3 {
+    width: 100%;
+}
+
+.Atacar-1, .Atacar-2, .Atacar-3 {
+    background-color: #ff4d4d;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.Pasar-1, .Pasar-2, .Pasar-3 {
+    background-color: aqua;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.boton-inicio {
+    background-color: green;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.Atacar-2:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.Atacar-1:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.Pasar-2:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.Pasar-1:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.Pasar-3:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.Atacar-3:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.opciones-porcentajes {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.opciones-porcentajes select, .Elegir-jugador select {
+    border: 1px solid black;
+    border-radius: 6px;
+    font-weight: bold;
+}
